@@ -1,0 +1,32 @@
+
+lab01.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <helloWorld>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
+   f:	eb 10                	jmp    21 <helloWorld+0x21>
+  11:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 18 <helloWorld+0x18>
+  18:	e8 00 00 00 00       	callq  1d <helloWorld+0x1d>
+  1d:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+  21:	83 7d fc 03          	cmpl   $0x3,-0x4(%rbp)
+  25:	7e ea                	jle    11 <helloWorld+0x11>
+  27:	b8 00 00 00 00       	mov    $0x0,%eax
+  2c:	c9                   	leaveq 
+  2d:	c3                   	retq   
+
+000000000000002e <main>:
+  2e:	55                   	push   %rbp
+  2f:	48 89 e5             	mov    %rsp,%rbp
+  32:	48 83 ec 10          	sub    $0x10,%rsp
+  36:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  39:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  3d:	b8 00 00 00 00       	mov    $0x0,%eax
+  42:	e8 00 00 00 00       	callq  47 <main+0x19>
+  47:	b8 00 00 00 00       	mov    $0x0,%eax
+  4c:	c9                   	leaveq 
+  4d:	c3                   	retq   
