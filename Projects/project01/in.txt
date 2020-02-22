@@ -1,0 +1,8 @@
+total 44
+-rw-r--r-- 1 osc osc   340 Feb 21 19:48 in.txt
+-rwxr-xr-x 1 osc osc 13488 Feb 21 19:48 main
+-rw-r--r-- 1 osc osc  7809 Feb 21 19:48 main.c
+-rw-r--r-- 1 osc osc    42 Feb 15 13:46 Makefile
+-rw-r--r-- 1 osc osc  5518 Feb 16 13:45 test.c
+drwxr-xr-x 2 osc osc  4096 Feb 21 19:49 testing
+drwxr-xr-x 2 osc osc  4096 Feb 19 14:03 testing
